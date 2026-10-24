@@ -96,9 +96,13 @@ every unresolved key; that list must be empty before any publish.
 
 ## Repo status
 
-Not yet a git repository; will be pushed to GitHub. No MCP servers
-configured — do not add one without asking. A `PostToolUse` hook logs every
-Edit/Write to `.claude/logs/file-edits.log`.
+Remote: `github.com/keeyani/KGas`, branch `main`. A `PostToolUse` hook logs
+every Edit/Write to `.claude/logs/file-edits.log`.
+
+One MCP server, project scope in `.mcp.json`: GitHub's remote server at
+the **read-only** endpoint, authenticated from `$KGAS_GITHUB_TOKEN`. The
+token is never stored in the repo. Do not switch it to a write endpoint,
+and do not add another server, without asking.
 
 ## Open questions
 
