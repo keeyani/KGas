@@ -94,6 +94,21 @@ A placeholder must be obviously fake (`TODO-GAS-SAFE-NUMBER`), never a
 plausible-looking value. The build chips them automatically and lists
 every unresolved key; that list must be empty before any publish.
 
+**`site.json` currently holds SAMPLE data, not real values.** Every
+placeholder was filled in deliberately so the site could be deployed
+somewhere free and used to exercise tooling. Phone and email use reserved
+ranges that cannot reach anyone (`07700 900707` is Ofcom's drama range,
+`example.com` is RFC 2606). The registration number, company number, VAT
+number, address and every price are invented and are *not* in reserved
+ranges — they are plausible-looking by design, which is exactly the
+failure mode the rule above warns about. Treat the whole file as unverified
+until each value is confirmed. The file's own `_comment` says the same.
+
+Facts live in grouped objects: `pricing`, `guarantees`, `response`, `team`,
+plus the top-level business fields. A price or claim typed into a page body
+rather than referenced as a token is a bug — that is how two contradictory
+emergency rates once reached the site undetected.
+
 ## Repo status
 
 Remote: `github.com/keeyani/KGas`, branch `main`. A `PostToolUse` hook logs
@@ -109,12 +124,34 @@ and do not add another server, without asking.
 Ask before deciding any of these — do not pick one and proceed.
 
 - **Hosting target.** GitHub Pages, Cloudflare Pages, WordPress or other.
-  Affects form handling, redirects and whether paths need a repo prefix.
-- **Contact form backend.** A static site cannot process a form itself.
-  Third-party service, `mailto:`, or phone only?
+  Affects redirects and whether paths need a repo prefix. Blocking:
+  `site.json`'s `domain` is still `https://kgas-demo.example`, which feeds
+  the canonical tag and every JSON-LD `url` on all 14 pages and does not
+  resolve.
 - **Validation / test tooling.** `html-validate`, Lighthouse: neither adopted.
 - **Browser support floor.** The CSS uses `clamp()`, `inset`, logical props.
 - **Accessibility target.** WCAG level; pages so far are AA on contrast.
-- **Logo.** Currently a text wordmark; no image asset supplied.
-- **Landlord certificates.** Listed on the homepage but assumed, not
-  confirmed. Remove if KGas does not do rental work.
+- **Logo.** Still a text wordmark; no image asset supplied. The footer
+  carries a credential badge (shield icon, "Gas Safe Register", the
+  registration number) built in brand colours — deliberately *not* the
+  official Gas Safe mark, which is a trademark licensed only to registered
+  businesses displaying their own number. Do not add the real logo while
+  the registration number is sample data.
+- **`--orange` as a foreground colour.** The brand table scopes it to
+  backgrounds, but three places use it for icon strokes on navy
+  (`.brand span`, `.hero-points svg`, `.gas-safe svg`). All pass contrast
+  comfortably. Either the rule should permit icon use on navy, or all three
+  should move to `--orange-text`.
+- **Services index.** There is no `services/index.html`; the nav entry and
+  every breadcrumb point at `services/boiler-installation.html`. Works, but
+  "Services" lands on a specific sibling rather than a neutral index.
+
+## Settled
+
+Decisions already taken. Do not reopen without asking.
+
+- **Contact form backend.** No form. `contact.html` offers phone, email and
+  post only, which works on any host and adds no dependency. The homepage
+  copy was reconciled to match.
+- **Landlord certificates.** Confirmed: KGas does rental work.
+  `services/landlord-certificates.html` is built and listed in `site.json`.

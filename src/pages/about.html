@@ -1,0 +1,205 @@
+---
+{
+  "title": "About KGas — Gas & Plumbing",
+  "description": "Who KGas are, how we work, and the registrations and insurance we hold.",
+  "section": "about",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "index.html"
+    },
+    {
+      "label": "About"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About KGas",
+      "description": "Who KGas are, how we work, and the registrations and insurance we hold.",
+      "url": "{{site.domain}}/about.html",
+      "mainEntity": {
+        "@type": "Plumber",
+        "name": "{{site.name}}",
+        "url": "{{site.domain}}/",
+        "telephone": "{{site.phone.display}}",
+        "email": "{{site.email}}",
+        "areaServed": "{{site.serviceArea}}"
+      }
+    }
+  ]
+}
+---
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>About {{site.name}}</h1>
+      <p class="lede">
+        Domestic gas and plumbing work across {{site.serviceArea}}, carried
+        out by Gas Safe registered engineers.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="{{root}}contact.html">Get in touch</a>
+        <a class="btn btn--ghost" href="tel:{{raw:site.phone.tel}}">Call {{site.phone.display}}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap with-aside">
+
+      <div class="prose">
+
+        <h2>Who we are</h2>
+        <p>
+          {{site.name}} has been carrying out domestic gas and plumbing work across {{site.serviceArea}} since {{site.team.tradingSince}}. We are a small firm, which means the person who quotes the job is usually the person who turns up to do it.
+        </p>
+        <p>
+          We have {{site.team.engineers}}.
+        </p>
+
+        <h2>How we work</h2>
+        <p>
+          The things below are commitments about conduct rather than claims
+          about performance, which is why they are stated here and the
+          numbers are not.
+        </p>
+        <ul class="checklist">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>A price before the work, not after it</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>An honest answer when repair is better value than replacement, and when it is not</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Work stops and you are consulted if the job changes</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>The paperwork left with you, not posted on at some later date</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>The property left as we found it</span>
+          </li>
+        </ul>
+
+        <h2>Registration and insurance</h2>
+        <p>
+          Anyone working on gas appliances in the United Kingdom must be on
+          the Gas Safe Register, and must carry an ID card showing which
+          types of work they are qualified for. You are entitled to ask to
+          see it, and a competent engineer will expect you to.
+        </p>
+        <p>
+          Our registration number is {{site.gasSafe}}. You can check any
+          registration, including ours, on the
+          <a href="https://www.gassaferegister.co.uk/" rel="noopener">Gas Safe Register</a>.
+        </p>
+        <p>
+          Insurance: {{site.insurance}}
+        </p>
+        <p>
+          We are {{site.team.accreditations}}.
+        </p>
+
+        <h2>Qualifications</h2>
+        <p>
+          Our engineers hold {{site.team.qualifications}}.
+        </p>
+        <p>
+          Gas qualifications are specific rather than general — being
+          registered for boilers is not the same as being registered for
+          cookers or commercial work. If you are unsure whether a job is one
+          we can take, ask and we will tell you plainly.
+        </p>
+
+        <h2>Where we work</h2>
+        <p>
+          We cover {{site.serviceArea}}. If you are near the edge of that,
+          it is worth asking rather than assuming —
+          <a href="{{root}}contact.html">get in touch</a> and we will tell you
+          either way.
+        </p>
+
+        <h2>Complaints</h2>
+        <p>
+          If something is wrong, tell us first and give us the chance to put
+          it right.
+          Call or email and ask for the job to be reviewed. We will respond within {{site.guarantees.complaintsResponse}} and put right anything that is our fault at our cost.
+        </p>
+        <p>
+          Concerns about the safety of gas work can also be raised directly
+          with the Gas Safe Register, which investigates reports about
+          registered engineers.
+        </p>
+
+        <h2>Business details</h2>
+        <p>
+          {{site.legal.entity}}<br>
+          Company number {{site.legal.companyNumber}}<br>
+          VAT number {{site.legal.vatNumber}}<br>
+          {{site.address.postal}}
+        </p>
+      </div>
+
+      <aside>
+        <div class="panel">
+          <h3>Get in touch</h3>
+          <ul class="checklist">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>Gas Safe reg. {{site.gasSafe}}</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>Covering {{site.serviceArea}}</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>{{site.openingHours}}</span>
+            </li>
+          </ul>
+          <a class="btn btn--primary" href="{{root}}contact.html">Contact us</a>
+        </div>
+
+        <div class="panel">
+          <h3>Check our registration</h3>
+          <p>
+            Gas Safe reg. {{site.gasSafe}}. Any registration can be verified
+            on the
+            <a href="https://www.gassaferegister.co.uk/" rel="noopener">Gas Safe Register</a>,
+            and every engineer carries an ID card you can ask to see.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>What we do</h3>
+          <ul>
+            <li><a href="{{root}}services/boiler-installation.html">Boiler installation</a></li>
+            <li><a href="{{root}}services/boiler-repair.html">Boiler repair</a></li>
+            <li><a href="{{root}}services/boiler-servicing.html">Annual servicing</a></li>
+            <li><a href="{{root}}services/plumbing.html">General plumbing</a></li>
+            <li><a href="{{root}}services/landlord-certificates.html">Landlord certificates</a></li>
+            <li><a href="{{root}}services/emergency.html">Emergency callout</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="wrap">
+      <h2>Need an engineer?</h2>
+      <p class="lede center">Tell us what the problem is and we will take it from there.</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="{{root}}contact.html">Get in touch</a>
+        <a class="btn btn--ghost" href="tel:{{raw:site.phone.tel}}">Call {{site.phone.display}}</a>
+      </div>
+    </div>
+  </section>

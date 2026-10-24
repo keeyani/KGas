@@ -151,7 +151,7 @@
         <p>
           That number is the correct first call, not ours. Once the supply
           is made safe we can look at the boiler —
-          see <a href="emergency.html">emergency callout</a>.
+          see <a href="{{root}}services/emergency.html">emergency callout</a>.
         </p>
 
         <h2>Repair or replace</h2>
@@ -163,7 +163,7 @@
         </p>
         <p>
           We will say which we think applies and why — see
-          <a href="boiler-installation.html">boiler installation</a>.
+          <a href="{{root}}services/boiler-installation.html">boiler installation</a>.
         </p>
 
         <h2>Common questions</h2>
@@ -175,7 +175,7 @@
               <p>
                 Diagnosis and labour are charged separately from parts, and
                 we price the repair before fitting anything.
-                <span class="todo">TODO-REPAIR-RATE</span>
+                Diagnosis and the first hour is {{site.pricing.firstHour}}; parts are quoted before they are fitted.
               </p>
               <p><a href="{{root}}pricing.html">See how our pricing works</a>.</p>
             </div>
@@ -184,7 +184,7 @@
           <details>
             <summary>How soon can someone come out?</summary>
             <div class="faq-body">
-              <p><span class="todo">TODO-RESPONSE-TIME</span></p>
+              <p> We aim to attend {{site.response.booked}}.</p>
             </div>
           </details>
 
@@ -203,14 +203,14 @@
           <details>
             <summary>Do you repair every make of boiler?</summary>
             <div class="faq-body">
-              <p><span class="todo">TODO-BRANDS-SERVICED</span></p>
+              <p> We work on all the major domestic brands, including {{site.brandsServiced}}.</p>
             </div>
           </details>
 
           <details>
             <summary>Is the repair guaranteed?</summary>
             <div class="faq-body">
-              <p><span class="todo">TODO-REPAIR-WARRANTY</span></p>
+              <p> Repairs are guaranteed for {{site.guarantees.workmanship}} on our labour, with the manufacturer warranty on any part we supply.</p>
             </div>
           </details>
 
@@ -238,13 +238,13 @@
           <a class="btn btn--primary" href="{{root}}contact.html">Book a repair</a>
         </div>
 
-        <div class="panel" style="margin-top:1.5rem">
+        <div class="panel">
           <h3>Related services</h3>
           <ul>
-            <li><a href="boiler-installation.html">Boiler installation</a></li>
-            <li><a href="boiler-servicing.html">Annual servicing</a></li>
-            <li><a href="plumbing.html">General plumbing</a></li>
-            <li><a href="emergency.html">Emergency callout</a></li>
+            <li><a href="{{root}}services/boiler-installation.html">Boiler installation</a></li>
+            <li><a href="{{root}}services/boiler-servicing.html">Annual servicing</a></li>
+            <li><a href="{{root}}services/plumbing.html">General plumbing</a></li>
+            <li><a href="{{root}}services/emergency.html">Emergency callout</a></li>
           </ul>
         </div>
       </aside>

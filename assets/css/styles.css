@@ -267,13 +267,18 @@ a  { color: var(--orange-text); }
 }
 
 .gas-safe {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
   border: 2px solid var(--orange);
   border-radius: var(--radius);
   padding: .5rem .85rem;
   color: var(--white);
   font-weight: 700;
 }
+.gas-safe svg { flex: none; color: var(--orange); }
+.gas-safe .gas-safe-name { display: block; font-size: .95rem; line-height: 1.2; }
+.gas-safe .gas-safe-no { display: block; font-weight: 600; font-size: .8rem; letter-spacing: .02em; }
 
 /* --- Breadcrumb --------------------------------------------------------- */
 .breadcrumb { background: var(--wash); border-bottom: 1px solid var(--rule); padding-block: .75rem; }
@@ -310,6 +315,7 @@ a  { color: var(--orange-text); }
   padding: 1.5rem;
 }
 .panel h3 { margin-top: 0; }
+.panel + .panel { margin-top: 1.5rem; }
 .panel ul { list-style: none; margin: 0 0 1.25rem; padding: 0; display: grid; gap: .5rem; }
 
 /* --- Checklist ---------------------------------------------------------- */

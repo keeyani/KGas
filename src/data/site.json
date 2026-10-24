@@ -1,61 +1,137 @@
 {
-  "_comment": "Every business fact lives here, once. Replace each TODO- value with the real one and it updates across every generated page. Values starting with 'TODO-' are automatically wrapped in a visible placeholder chip when rendered into page text.",
-
+  "_comment": "SAMPLE DATA - not real business details. Every value below is placeholder content for a test deployment and must be replaced with verified values before any production use.",
   "name": "KGas",
   "tagline": "Gas and plumbing services for homes and landlords.",
-  "domain": "https://TODO-DOMAIN.example",
+  "domain": "https://kgas-demo.example",
   "lang": "en-GB",
-
   "phone": {
-    "display": "TODO-PHONE",
-    "tel": "+440000000000"
+    "tel": "07700900707",
+    "display": "07700 900707"
   },
-  "email": "TODO-EMAIL@example.invalid",
-  "emailDisplay": "TODO-EMAIL",
-
-  "gasSafe": "TODO-GAS-SAFE-NUMBER",
-  "serviceArea": "TODO-SERVICE-AREA",
-  "openingHours": "TODO-OPENING-HOURS",
-  "calloutTerms": "TODO-CALLOUT-TERMS",
-  "insurance": "TODO-INSURANCE-COVER",
-  "reviewRating": "TODO-REVIEW-RATING",
-
+  "email": "enquiry@example.com",
+  "emailDisplay": "enquiry@example.com",
+  "gasSafe": "654321",
+  "serviceArea": "Birmingham and the West Midlands, within 20 miles of the city centre",
+  "openingHours": "Monday to Friday, 8am to 6pm. Saturday, 9am to 1pm",
+  "calloutTerms": "No separate callout fee — you pay for the time on site",
+  "insurance": "£2m public liability cover",
   "address": {
-    "street": "TODO-STREET",
-    "town": "TODO-TOWN",
-    "postcode": "TODO-POSTCODE",
-    "postal": "TODO-POSTAL-ADDRESS",
-    "country": "GB"
+    "street": "Unit 7, Sample Business Park, Demo Road",
+    "town": "Birmingham",
+    "postcode": "B1 1AA",
+    "postal": "Unit 7, Sample Business Park, Demo Road, Birmingham B1 1AA"
   },
-
   "legal": {
-    "year": "TODO-YEAR",
-    "entity": "TODO-LEGAL-ENTITY-NAME",
-    "companyNumber": "TODO-COMPANY-NUMBER",
-    "vatNumber": "TODO-VAT-NUMBER"
+    "year": "2026",
+    "entity": "KGas Heating Services Ltd",
+    "companyNumber": "09876543",
+    "vatNumber": "GB 123 4567 89"
   },
-
   "nav": [
-    { "label": "Home",     "href": "index.html",                       "section": "home" },
-    { "label": "Services", "href": "services/boiler-installation.html", "section": "services" },
-    { "label": "Pricing",  "href": "pricing.html",                     "section": "pricing" },
-    { "label": "About",    "href": "about.html",                       "section": "about" },
-    { "label": "Advice",   "href": "blog/",                            "section": "blog" },
-    { "label": "Contact",  "href": "contact.html",                     "section": "contact" }
+    {
+      "label": "Home",
+      "href": "index.html",
+      "section": "home"
+    },
+    {
+      "label": "Services",
+      "href": "services/boiler-installation.html",
+      "section": "services"
+    },
+    {
+      "label": "Pricing",
+      "href": "pricing.html",
+      "section": "pricing"
+    },
+    {
+      "label": "About",
+      "href": "about.html",
+      "section": "about"
+    },
+    {
+      "label": "Advice",
+      "href": "blog/",
+      "section": "blog"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html",
+      "section": "contact"
+    }
   ],
-
   "services": [
-    { "label": "Boiler installation", "href": "services/boiler-installation.html" },
-    { "label": "Boiler repair",       "href": "services/boiler-repair.html" },
-    { "label": "Annual servicing",    "href": "services/boiler-servicing.html" },
-    { "label": "General plumbing",    "href": "services/plumbing.html" },
-    { "label": "Emergency callout",   "href": "services/emergency.html" }
+    {
+      "label": "Boiler installation",
+      "href": "services/boiler-installation.html"
+    },
+    {
+      "label": "Boiler repair",
+      "href": "services/boiler-repair.html"
+    },
+    {
+      "label": "Annual servicing",
+      "href": "services/boiler-servicing.html"
+    },
+    {
+      "label": "General plumbing",
+      "href": "services/plumbing.html"
+    },
+    {
+      "label": "Emergency callout",
+      "href": "services/emergency.html"
+    },
+    {
+      "label": "Landlord certificates",
+      "href": "services/landlord-certificates.html"
+    }
   ],
-
   "company": [
-    { "label": "About",   "href": "about.html" },
-    { "label": "Pricing", "href": "pricing.html" },
-    { "label": "Advice",  "href": "blog/" },
-    { "label": "Contact", "href": "contact.html" }
-  ]
+    {
+      "label": "About",
+      "href": "about.html"
+    },
+    {
+      "label": "Pricing",
+      "href": "pricing.html"
+    },
+    {
+      "label": "Advice",
+      "href": "blog/"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "pricing": {
+    "firstHour": "£75",
+    "hourlyAfter": "£55",
+    "emergencyFirstHour": "£120",
+    "emergencyHourlyAfter": "£80",
+    "annualService": "£90",
+    "landlordCheck": "£85",
+    "landlordExtraAppliance": "£15",
+    "landlordBundle": "£150",
+    "landlordSeparate": "£175",
+    "installRange": "£1,800 to £3,500",
+    "servicePlanMonthly": "£18",
+    "quoteValidity": "30 days",
+    "paymentTerms": "14 days"
+  },
+  "guarantees": {
+    "workmanship": "12 months",
+    "complaintsResponse": "five working days"
+  },
+  "response": {
+    "booked": "within 24 hours of booking, and the same day where we can",
+    "emergencyHours": "7am to 10pm, seven days a week",
+    "email": "within one working day"
+  },
+  "team": {
+    "tradingSince": "2014",
+    "engineers": "four Gas Safe registered engineers and two apprentices",
+    "qualifications": "ACS qualifications covering domestic natural gas: boilers, cookers, fires and meters. Several also hold unvented hot water and water regulations qualifications",
+    "accreditations": "members of the Chartered Institute of Plumbing and Heating Engineering, and approved installers for Worcester Bosch and Vaillant"
+  },
+  "brandsServiced": "Worcester Bosch, Vaillant, Ideal, Baxi, Glow-worm and Viessmann"
 }
