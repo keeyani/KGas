@@ -2,7 +2,7 @@
   "_comment": "SAMPLE DATA - not real business details. Every value below is placeholder content for a test deployment and must be replaced with verified values before any production use.",
   "name": "KGas",
   "tagline": "Gas and plumbing services for homes and landlords.",
-  "domain": "https://kgas-demo.example",
+  "domain": "https://keeyani.github.io/KGas",
   "lang": "en-GB",
   "phone": {
     "tel": "07700900707",
