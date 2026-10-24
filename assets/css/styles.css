@@ -310,6 +310,7 @@ a  { color: var(--orange-text); }
   padding: 1.5rem;
 }
 .panel h3 { margin-top: 0; }
+.panel + .panel { margin-top: 1.5rem; }
 .panel ul { list-style: none; margin: 0 0 1.25rem; padding: 0; display: grid; gap: .5rem; }
 
 /* --- Checklist ---------------------------------------------------------- */
