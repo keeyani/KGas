@@ -18,12 +18,26 @@ check for it.
 
 ## Start here
 
-Run `node build.mjs --check`. It exits 1 when the committed HTML is stale.
-A stale tree means someone edited `src/` and did not re-run the build, or
-edited generated HTML directly. Report it as a blocker and say which it is.
+Work in the directory you were given. It may be a throwaway worktree holding
+a pull request rather than the user's own checkout, so do not assume the files
+you see are the ones on their disk, and do not modify anything.
 
-Then read the diff you were given scope for. Read `.claude/rules/templating.md`
-for the templating contract before judging anything under `src/`.
+Run `node build.mjs --check` there. It exits 1 when the committed HTML is
+stale. A stale tree means someone edited `src/` and did not re-run the build,
+or edited generated HTML directly. Report it as a blocker and say which it is.
+This is the one check that cannot be done by reading a diff, so run it before
+anything else, and say so explicitly if it could not run.
+
+Then read the diff, using the base you were given. If you were told there is
+no diff — a whole-repository sweep — review the current state of the files in
+scope instead, and do not report the absent diff as a finding.
+
+Read `.claude/rules/templating.md` for the templating contract before judging
+anything under `src/`, and read it — along with `CLAUDE.md` and anything else
+you consult — from the directory you were given, never from the repository
+root. When a change alters the rules themselves, the copy at the root is the
+old one, and checking a proposal against it would have you report agreement
+with rules the PR is trying to change.
 
 ## What to look for
 
