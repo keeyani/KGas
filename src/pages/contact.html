@@ -1,0 +1,202 @@
+---
+{
+  "title": "Contact KGas",
+  "description": "Call or email KGas to book gas and plumbing work. Opening hours, service area, and what to have ready when you get in touch.",
+  "section": "contact",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "index.html"
+    },
+    {
+      "label": "Contact"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact KGas",
+      "url": "{{site.domain}}/contact.html",
+      "mainEntity": {
+        "@type": "Plumber",
+        "name": "{{site.name}}",
+        "url": "{{site.domain}}/",
+        "telephone": "{{site.phone.display}}",
+        "email": "{{site.email}}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{site.address.street}}",
+          "addressLocality": "{{site.address.town}}",
+          "postalCode": "{{site.address.postcode}}",
+          "addressCountry": "GB"
+        },
+        "areaServed": "{{site.serviceArea}}",
+        "openingHours": "{{site.openingHours}}"
+      }
+    }
+  ]
+}
+---
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Contact us</h1>
+      <p class="lede">
+        Call for anything urgent. Email if it can wait and you would rather
+        write it down.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="tel:{{raw:site.phone.tel}}">Call {{site.phone.display}}</a>
+        <a class="btn btn--ghost" href="mailto:{{raw:site.email}}">Email {{site.emailDisplay}}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap with-aside">
+
+      <div class="prose">
+
+        <h2>If you smell gas, call this instead</h2>
+        <p>
+          Do not call us and do not email. Leave the building and call the
+          National Gas Emergency Service on
+          <a href="tel:0800111999">0800 111 999</a> — free, 24 hours. The
+          same applies if a carbon monoxide alarm sounds.
+        </p>
+        <p>
+          <a href="{{root}}services/emergency.html">What to do in a gas or water emergency</a>
+          sets out the full procedure.
+        </p>
+
+        <h2>How to reach us</h2>
+
+        <h3>By phone</h3>
+        <p>
+          <a href="tel:{{raw:site.phone.tel}}">{{site.phone.display}}</a>
+        </p>
+        <p>
+          {{site.openingHours}}
+        </p>
+        <p>
+          Phone is the fastest route for anything that needs attention the
+          same day.  Outside office hours, emergency calls are answered on the same number until 10pm.
+        </p>
+
+        <h3>By email</h3>
+        <p>
+          <a href="mailto:{{raw:site.email}}">{{site.emailDisplay}}</a>
+        </p>
+        <p>
+          Better for quotations, landlord paperwork and anything with
+          details worth writing down.
+           We answer email within one working day.
+        </p>
+
+        <h3>By post</h3>
+        <p>
+          {{site.address.postal}}
+        </p>
+        <p>
+          This is our business address for correspondence.
+           It is not a shop or a trade counter, so please call before coming to the address.
+        </p>
+
+        <h2>What to have ready</h2>
+        <p>
+          None of this is essential, but each one tends to turn two calls
+          into one.
+        </p>
+        <ul class="checklist">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Your postcode, so we can confirm you are in the area</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>The make of the boiler, and the model if it is on the front</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Any error code on the display — note it before you reset</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>What the fault is doing, and when it started</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>For a landlord check, how many gas appliances are in the property</span>
+          </li>
+        </ul>
+
+        <h2>Where we work</h2>
+        <p>
+          We cover {{site.serviceArea}}. If you are near the edge of that,
+          ask rather than assume — it costs you a phone call and we will tell
+          you either way.
+        </p>
+
+        <h2>Complaints</h2>
+        <p>
+          If something has gone wrong, say so and give us the chance to put
+          it right.  Call or email and ask for the job to be reviewed. We will respond within five working days and put right anything that is our fault at our cost.
+        </p>
+      </div>
+
+      <aside>
+        <div class="panel">
+          <h3>Gas escape or CO alarm</h3>
+          <p>Leave the building and call the National Gas Emergency Service:</p>
+          <p><a class="btn btn--primary" href="tel:0800111999">0800 111 999</a></p>
+          <p>Free, 24 hours. Call them before you call us.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Call or email</h3>
+          <ul class="checklist">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><a href="tel:{{raw:site.phone.tel}}">{{site.phone.display}}</a></span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><a href="mailto:{{raw:site.email}}">{{site.emailDisplay}}</a></span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>{{site.openingHours}}</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>Gas Safe reg. {{site.gasSafe}}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Book a specific job</h3>
+          <ul>
+            <li><a href="{{root}}services/boiler-repair.html">Boiler repair</a></li>
+            <li><a href="{{root}}services/boiler-servicing.html">Annual servicing</a></li>
+            <li><a href="{{root}}services/boiler-installation.html">Boiler installation</a></li>
+            <li><a href="{{root}}services/landlord-certificates.html">Landlord certificates</a></li>
+            <li><a href="{{root}}services/plumbing.html">General plumbing</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="wrap">
+      <h2>Ready when you are</h2>
+      <p class="lede center">Call for anything urgent, or email and we will come back to you.</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="tel:{{raw:site.phone.tel}}">Call {{site.phone.display}}</a>
+        <a class="btn btn--ghost" href="mailto:{{raw:site.email}}">Email {{site.emailDisplay}}</a>
+      </div>
+    </div>
+  </section>
