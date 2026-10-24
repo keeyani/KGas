@@ -1,0 +1,61 @@
+{
+  "_comment": "Every business fact lives here, once. Replace each TODO- value with the real one and it updates across every generated page. Values starting with 'TODO-' are automatically wrapped in a visible placeholder chip when rendered into page text.",
+
+  "name": "KGas",
+  "tagline": "Gas and plumbing services for homes and landlords.",
+  "domain": "https://TODO-DOMAIN.example",
+  "lang": "en-GB",
+
+  "phone": {
+    "display": "TODO-PHONE",
+    "tel": "+440000000000"
+  },
+  "email": "TODO-EMAIL@example.invalid",
+  "emailDisplay": "TODO-EMAIL",
+
+  "gasSafe": "TODO-GAS-SAFE-NUMBER",
+  "serviceArea": "TODO-SERVICE-AREA",
+  "openingHours": "TODO-OPENING-HOURS",
+  "calloutTerms": "TODO-CALLOUT-TERMS",
+  "insurance": "TODO-INSURANCE-COVER",
+  "reviewRating": "TODO-REVIEW-RATING",
+
+  "address": {
+    "street": "TODO-STREET",
+    "town": "TODO-TOWN",
+    "postcode": "TODO-POSTCODE",
+    "postal": "TODO-POSTAL-ADDRESS",
+    "country": "GB"
+  },
+
+  "legal": {
+    "year": "TODO-YEAR",
+    "entity": "TODO-LEGAL-ENTITY-NAME",
+    "companyNumber": "TODO-COMPANY-NUMBER",
+    "vatNumber": "TODO-VAT-NUMBER"
+  },
+
+  "nav": [
+    { "label": "Home",     "href": "index.html",                       "section": "home" },
+    { "label": "Services", "href": "services/boiler-installation.html", "section": "services" },
+    { "label": "Pricing",  "href": "pricing.html",                     "section": "pricing" },
+    { "label": "About",    "href": "about.html",                       "section": "about" },
+    { "label": "Advice",   "href": "blog/",                            "section": "blog" },
+    { "label": "Contact",  "href": "contact.html",                     "section": "contact" }
+  ],
+
+  "services": [
+    { "label": "Boiler installation", "href": "services/boiler-installation.html" },
+    { "label": "Boiler repair",       "href": "services/boiler-repair.html" },
+    { "label": "Annual servicing",    "href": "services/boiler-servicing.html" },
+    { "label": "General plumbing",    "href": "services/plumbing.html" },
+    { "label": "Emergency callout",   "href": "services/emergency.html" }
+  ],
+
+  "company": [
+    { "label": "About",   "href": "about.html" },
+    { "label": "Pricing", "href": "pricing.html" },
+    { "label": "Advice",  "href": "blog/" },
+    { "label": "Contact", "href": "contact.html" }
+  ]
+}

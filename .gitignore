@@ -1,0 +1,18 @@
+# Claude Code — machine-local, not shared
+.claude/settings.local.json
+.claude/logs/
+
+# Node tooling (local preview only; not part of the deployed site)
+node_modules/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.secret
+
+# Editor / OS
+.vs/
+.DS_Store
+Thumbs.db

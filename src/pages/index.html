@@ -1,0 +1,216 @@
+---
+{
+  "title": "KGas — Gas & Plumbing Services",
+  "description": "KGas provides gas and plumbing services: boiler installation, repair, servicing and emergency callout. Gas Safe registered.",
+  "section": "home",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Plumber",
+      "name": "{{site.name}}",
+      "description": "Gas and plumbing services: boiler installation, repair, servicing and emergency callout.",
+      "url": "{{site.domain}}/",
+      "telephone": "{{site.phone.display}}",
+      "email": "{{site.email}}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{site.address.street}}",
+        "addressLocality": "{{site.address.town}}",
+        "postalCode": "{{site.address.postcode}}",
+        "addressCountry": "GB"
+      },
+      "areaServed": "{{site.serviceArea}}",
+      "openingHours": "{{site.openingHours}}"
+    }
+  ]
+}
+---
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>Gas &amp; plumbing you can book today</h1>
+      <p class="lede">
+        Boiler installation, repairs, annual servicing and emergency callout
+        from Gas Safe registered engineers.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="contact.html">Book an engineer</a>
+        <a class="btn btn--ghost" href="tel:{{raw:site.phone.tel}}">
+          Call {{site.phone.display}}
+        </a>
+      </div>
+
+      <ul class="hero-points">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Gas Safe registered &mdash; reg. no. {{site.gasSafe}}</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Covering {{site.serviceArea}}</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>{{site.calloutTerms}} &mdash; confirm callout fee and response-time wording before publishing</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================= TRUST STRIP =========================
+       Every item here is a factual claim about the business. Nothing
+       is asserted until the real value is supplied.
+       =============================================================== -->
+  <section class="trust" aria-label="Credentials">
+    <div class="wrap">
+      <ul>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+          Gas Safe reg. {{site.gasSafe}}
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          {{site.insurance}}
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          {{site.openingHours}}
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 15 9l7 .6-5.3 4.6L18.3 21 12 17.3 5.7 21l1.6-6.8L2 9.6 9 9Z"/></svg>
+          {{site.reviewRating}}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =========================== SERVICES ===========================
+       These link to pages under services/ that do not exist yet.
+       =============================================================== -->
+  <section class="section" aria-labelledby="services-h">
+    <div class="wrap">
+      <div class="stack-head">
+        <h2 id="services-h">What we do</h2>
+        <p class="lede">Domestic gas and plumbing work, from a dripping tap to a full boiler replacement.</p>
+      </div>
+
+      <div class="grid grid--3">
+
+        <article class="card card--linked">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="14" rx="2"/><path d="M8 21h8M12 17v4M8 7h8M8 11h5"/></svg>
+          </div>
+          <h3>Boiler installation</h3>
+          <p>Replacement and new installs, with the old unit removed and the system flushed.</p>
+          <a class="card-link" href="services/boiler-installation.html">Boiler installation &rarr;</a>
+        </article>
+
+        <article class="card card--linked">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 1 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3Z"/><path d="m18 2 4 4"/></svg>
+          </div>
+          <h3>Boiler repair</h3>
+          <p>Diagnosis and repair of pressure loss, no hot water, error codes and noisy systems.</p>
+          <a class="card-link" href="services/boiler-repair.html">Boiler repair &rarr;</a>
+        </article>
+
+        <article class="card card--linked">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V7a3 3 0 0 1 6 0v4"/><rect x="5" y="11" width="14" height="10" rx="2"/></svg>
+          </div>
+          <h3>Annual servicing</h3>
+          <p>Safety checks and servicing to keep your boiler warranty and landlord obligations intact.</p>
+          <a class="card-link" href="services/boiler-servicing.html">Annual servicing &rarr;</a>
+        </article>
+
+        <article class="card card--linked">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S6 9 6 13a6 6 0 0 0 12 0c0-4-6-10.3-6-10.3Z"/></svg>
+          </div>
+          <h3>General plumbing</h3>
+          <p>Leaks, taps, toilets, radiators, blockages and bathroom pipework.</p>
+          <a class="card-link" href="services/plumbing.html">General plumbing &rarr;</a>
+        </article>
+
+        <article class="card card--linked">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h8l-1 8 9-12h-8Z"/></svg>
+          </div>
+          <h3>Emergency callout</h3>
+          <p>No heating, no hot water, a burst pipe or a suspected gas leak.</p>
+          <a class="card-link" href="services/emergency.html">Emergency callout &rarr;</a>
+        </article>
+
+        <article class="card card--linked">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15h6"/></svg>
+          </div>
+          <h3>Landlord certificates</h3>
+          <p>Gas safety records for rented property, issued after inspection.</p>
+          <a class="card-link" href="services/landlord-certificates.html">Landlord certificates &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== HOW IT WORKS ======================== -->
+  <section class="section section--wash" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="stack-head">
+        <h2 id="how-h">How it works</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Tell us the problem</h3>
+          <p>Call or send the form. Describe the fault and your boiler make if you know it.</p>
+        </article>
+        <article class="card">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Book a slot</h3>
+          <p>We confirm a time and give you a price before any work starts.</p>
+        </article>
+        <article class="card">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Job done</h3>
+          <p>An engineer attends, completes the work and leaves the paperwork with you.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SERVICE AREA ========================= -->
+  <section class="section" aria-labelledby="area-h">
+    <div class="wrap center">
+      <h2 id="area-h">Where we work</h2>
+      <p class="lede center">
+        KGas covers {{site.serviceArea}}.
+        Not sure if you are in range? <a href="contact.html">Ask us</a>.
+      </p>
+    </div>
+  </section>
+
+  <!--
+    TESTIMONIALS - intentionally not built.
+    Customer reviews are factual claims about real people. Supply genuine
+    quotes (with permission) or a verified review-platform widget, and this
+    section can be added then. Placeholder reviews are not acceptable even
+    temporarily: they read as real and are easy to ship by accident.
+  -->
+
+  <!-- =========================== CTA BAND =========================== -->
+  <section class="section cta-band">
+    <div class="wrap">
+      <h2>Need an engineer?</h2>
+      <p class="lede center">Book online, or call and speak to someone now.</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="contact.html">Book an engineer</a>
+        <a class="btn btn--ghost" href="tel:{{raw:site.phone.tel}}">Call {{site.phone.display}}</a>
+      </div>
+    </div>
+  </section>
+
